@@ -450,7 +450,7 @@ a {
 .box {
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0 3px 1rem rgba(0,0,0,.15);
+    box-shadow: 0 5px 1rem rgba(0,0,0,.05);
     text-align: center;
     flex: 1 1 300px;
 }
@@ -468,4 +468,21 @@ a {
 .box p {
     text-align: start;
     padding: .7rem 0;
+}
+
+
+
+/* ////////////////////// Contact ////////// */
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 70rem;
+    margin: 4rem;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid green; */
+    text-align: center;
+    margin-top: 20rem;
 }
