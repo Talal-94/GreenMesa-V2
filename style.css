@@ -22,7 +22,7 @@
     --fs-900: clamp(4rem, 5vw, 6rem);
     --fs-800: 3.5rem;
     --fs-700: 2rem;
-    --fs-600: 1.5rem;
+    --fs-600: 2rem;
     --fs-500: 1.5rem;
     --fs-400: 1rem;
     --fs-300: 0.9375rem;
@@ -36,7 +36,7 @@
 @media (min-width: 40em) {
     :root {
         --fs-800: 5rem;
-        --fs-700: 2.5rem;
+        --fs-700: 2rem;
         --fs-600: 1.75rem;
         --fs-400: 1.125rem;
     }
@@ -47,7 +47,7 @@
         /* font-sizes */
         --fs-800: 6.25rem;
         --fs-700: 3.5rem;
-        --fs-600: 2rem;
+        --fs-600: 2.4rem;
         --fs-400: 1.2rem;
         --fs-300: 1rem;
 
@@ -87,7 +87,7 @@ p {
 /* set up the body */
 body {
     font-family: var(--ff-sans-normal);
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     color: hsl( var(--clr-white) );
     line-height: 1.5;
     min-height: 100vh;
@@ -198,6 +198,7 @@ a {
 
 .logo {
     margin: 2rem;
+    cursor: pointer;
 }
 .logo img {
     height: 30px;
@@ -400,16 +401,43 @@ a {
     justify-content: center;
     padding: 0;
     margin-top: 5rem;
+    margin-bottom: 1rem;
     color: rgba(0, 127, 109, .8);
 }
 
+.story-container {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template: 1fr / repeat(2, 1fr);
+    align-items: flex-start;
+}
 
+.story-img {
+    grid-column: 1 / -1;
+}
+
+.story-text {
+    padding: .7rem .5rem;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.story-img img {
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+@media screen and (max-width:50rem) {
+    .story-container {
+        grid-template: 1fr / repeat(1, 1fr);
+    }
+}
+
+/* /////////////////////////////// */
 .big-container {
     min-height: 50vh;
     display: flex;
     flex-flow: column;
-    padding-bottom: 5rem;
-    background-color: linear-gradient(#ccc 50%, #2980b9 50.1%);
+    padding-bottom: 1rem;
 }
 
 .box-container {
@@ -426,7 +454,6 @@ a {
     box-shadow: 0 3px 1rem rgba(0,0,0,.15);
     text-align: center;
     flex: 1 1 300px;
-    
 }
 
 .box img {
