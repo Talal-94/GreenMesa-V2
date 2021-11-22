@@ -153,7 +153,7 @@ a {
 
 .bg-color { background-color: var(--clr-bg);}
 
-.text-dark { color: var(--clr-dark);}
+.text-blue { color: var(--clr-blue);}
 .text-accent { color: var(--clr-green);}
 .text-white { color: var(--clr-white);}
 
@@ -232,11 +232,11 @@ a {
     text-align: center;
     color: white;
     border-radius: 5px;
-    background-color: var(--clr-green);
+    background-color: #000;
 }
 
 .primary-navigation .btn:hover {
-    background-color: #000;
+    background-color: var(--clr-green);
 }
 .current-page {
     border-bottom: 3px solid var(--clr-blue);
@@ -539,15 +539,75 @@ a {
 
 
 /* /////////////// CONTACT STUFF /////////////// */ 
-
-.grid-container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 4rem;
-    padding: 0;
-    align-items: center;
+.contact-flex {
+    display: flex;
+    margin: 3rem .5rem;
     gap: 1rem;
-    /* border: 1px solid green; */
+    align-items: baseline;
     text-align: center;
-    margin-top: 20rem;
+    justify-content: space-between;
+}
+
+.contact-form {
+    width: 50%;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem .5rem;
+}
+
+input {
+    padding: .3rem;
+    margin: .2rem;
+}
+.message {
+    height: 8rem;
+    
+}
+form button {
+    align-self: center;
+    text-align: center;
+    border: none;
+    padding: 0.1rem 0.3rem 0.3rem;
+    margin: .5rem;
+
+    color: white;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+form button:hover {
+    background-color: var(--clr-green);
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+.contact-info h2 {
+    margin: 1rem;
+}
+.contact-info p {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 50rem) {
+    .contact-flex {
+        flex-direction:column;
+        text-align: center;
+        align-items: center;
+    }
+    .contact-info {
+        order: 1;
+    }
+    .contact-form {
+        order: 2;
+    }
+
 }
