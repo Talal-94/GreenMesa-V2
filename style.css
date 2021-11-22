@@ -151,11 +151,11 @@ a {
 
 /* colors */
 
-.bg-color { background-color: hsl( var(--clr-bg) );}
+.bg-color { background-color: var(--clr-bg);}
 
-.text-dark { color: hsl( var(--clr-dark) );}
-.text-accent { color: hsl( var(--clr-green) );}
-.text-white { color: hsl( var(--clr-white) );}
+.text-dark { color: var(--clr-dark);}
+.text-accent { color: var(--clr-green);}
+.text-white { color: var(--clr-white);}
 
 /* typography */
 
@@ -499,6 +499,7 @@ a {
 .solutions-container2 p {
     letter-spacing: 1.4px;
     text-align: start;
+    padding: .7rem;
 }
 
 .solutions-flex {
@@ -511,6 +512,7 @@ a {
 
 .solutions-flex img {
     max-width: 50%;
+    max-height: 272px;
 }
 
 @media screen and (max-width: 48rem) {
