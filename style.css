@@ -162,9 +162,9 @@ a {
 .ff-sans-cond { font-family: var(--ff-sans-bold); } 
 .ff-sans-normal { font-family: var(--ff-sans-normal); } 
 
-.letter-spacing-1 { letter-spacing: 3.25px; } 
-.letter-spacing-2 { letter-spacing: 2.5px; } 
-.letter-spacing-3 { letter-spacing: 2px; } 
+.letter-spacing-1 { letter-spacing: 2.5px; } 
+.letter-spacing-2 { letter-spacing: 2px; } 
+.letter-spacing-3 { letter-spacing: 1.2px; } 
 
 .uppercase { text-transform: uppercase; }
 
@@ -295,7 +295,7 @@ a {
 }
 
 
-/* /////////////// Homepage /////////////// */ 
+/* /////////////// HOMEPAGE /////////////// */ 
 
 .content {
     min-height: 95vh;
@@ -311,7 +311,51 @@ a {
     max-width: 21rem;
 }
 
-/* Homepage 2 */
+
+
+/* HOMEPAGE 2 */
+
+.big-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 1rem;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin: 5rem 1rem;
+}
+
+.box {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 1rem rgba(0,0,0,.05);
+    text-align: center;
+    flex: 1 0 250px;
+}
+
+.box img {
+    margin: 0 auto;
+}
+
+.box h3 {
+    padding-top: .7rem;
+    color: var(--clr-blue);
+    font-weight: 600;
+}
+
+.box p {
+    text-align: start;
+    padding: .7rem 0;
+}
+
+/* HOMEPAGE 3 */
 
 .main-container {
     margin: 0 auto;
@@ -444,7 +488,6 @@ a {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem 0;
-
 }
 
 .box {
@@ -452,7 +495,7 @@ a {
     border-radius: 5px;
     box-shadow: 0 5px 1rem rgba(0,0,0,.05);
     text-align: center;
-    flex: 1 1 300px;
+    flex: 1 0 250px;
 }
 
 .box img {
@@ -485,20 +528,18 @@ a {
 }
 
 .solutions-container2 h2 {
-    padding-top: 3.2rem;
-    padding-bottom: 3.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
     text-align: center;
     line-height: 1.75;
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 32px;
-    background-image: url(assets/scifi.jpeg);
-    background-size: cover;
-    background-position: center;
-
-}
+    border-radius: 30px;
+    background: rgb(214,0,109);
+    background: linear-gradient(180deg, rgba(214,0,109,.2) 0%, rgba(0,127,110,.2) 100%);}
 
 .solutions-container2 p {
-    letter-spacing: 1.4px;
+    /* letter-spacing: 1.4px; */
     text-align: start;
     padding: .7rem;
 }
@@ -523,6 +564,7 @@ a {
 
     .solutions-flex img {
         order: 1;
+        max-width: 90%;
     }
     .solutions-flex p {
         order: 2;
@@ -601,6 +643,10 @@ form button:hover {
 
 .contact-info p {
     margin: .7rem;
+}
+
+.maps {
+    align-items: center;
 }
 
 @media screen and (max-width: 50rem) {
