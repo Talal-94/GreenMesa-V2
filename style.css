@@ -311,8 +311,6 @@ a {
     max-width: 21rem;
 }
 
-
-
 /* HOMEPAGE 2 */
 
 .big-container {
@@ -322,6 +320,7 @@ a {
     justify-content: center;
     flex-flow: column;
     padding-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 .box-container {
