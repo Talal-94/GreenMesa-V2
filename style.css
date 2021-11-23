@@ -406,12 +406,22 @@ a {
 
 .footer-container {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0 auto;
     margin-top: 1rem;
     justify-content: center;
     background-color: var(--clr-bg);
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
 }
 
+.copyright {
+    order: 2;
+}
+.social {
+    order: 1;
+}
 .footer-container ul {
     display: flex;
     padding: 0;
@@ -421,8 +431,6 @@ a {
 
 .footer-container ul li {
     padding-left: 1.5rem;
-    padding-top: 2.2rem;
-    padding-bottom: 2.2rem;
     font-size: 1rem;
     text-align: center;
 }
@@ -524,7 +532,9 @@ a {
 }
 
 .solutions-container2 h1{
-    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 0;
 }
 
 .solutions-container2 h2 {
